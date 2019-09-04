@@ -14,11 +14,16 @@ public func routes(_ router: Router) throws {
     
     router.get("persons") { req in
         return """
-            Person: {
+            [{
                 name: Lucas,
                 age: 21,
                 height: 1.78,
-            }
+            },
+            {
+                name: Leonardo,
+                age: 22,
+                height: 1.73,
+            }]
         """
     }
 
